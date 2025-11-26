@@ -282,15 +282,18 @@
 
 &i2c3 {
 	pinctrl-0 = <&i2c3m0_xfer>;
+	status = "disabled";
 	/* connected with MIPI-CSI0 */
 };
 
 dsi1_i2c: &i2c4 {
 	pinctrl-0 = <&i2c4m3_xfer>;
+	status = "disabled";
 };
 
 dsi0_i2c: &i2c5 {
 	pinctrl-0 = <&i2c5m0_xfer>;
+	status = "disabled";
 };
 
 &i2c6 {
@@ -400,6 +403,7 @@ dsi0_i2c: &i2c5 {
 
 &i2c8 {
 	pinctrl-0 = <&i2c8m2_xfer>;
+	status = "disabled";
 	/* connected with Header_2.54MM */
 };
 
@@ -752,17 +756,17 @@ dsi1_pwm: &pwm11 {
 
 &uart0 {
 	pinctrl-0 = <&uart0m0_xfer>;
-	status = "disabled";
+	status = "okay";
 };
 
 &uart3 {
 	pinctrl-0 = <&uart3m1_xfer>;
-	status = "disabled";
+	status = "okay";
 };
 
 &uart4 {
 	pinctrl-0 = <&uart4m2_xfer>;
-	status = "disabled";
+	status = "okay";
 };
 
 &uart6 {
@@ -772,10 +776,10 @@ dsi1_pwm: &pwm11 {
 
 &uart7 {
 	pinctrl-0 = <&uart7m2_xfer>;
-	status = "disabled";
+	status = "okay";
 };
 
 &uart8 {
 	pinctrl-0 = <&uart8m1_xfer>;
-	status = "disabled";
+	status = "okay";
 };
